@@ -56,7 +56,7 @@ const NewProduct = () => {
                           <h3 className='md:text-xl text-base font-bold '>{product.title}</h3>
                           <p className='lg:text-xl md:text-md text-sm font-semibold'>Price : ${product.price}</p>
                           <div className="flex justify-between items-center gap-2 lg:mx-5 md:mx-3 mx-1 mt-2">
-                            <button className="lg:text-sm text-xs font-semibold hover:bg-[#fd3d57] hover:text-white border border-[#fd3d57] rounded-lg text-[#fd3d57] py-1 lg:px-2 md:px-1 px-0.5 transition-all ease-in-out delay-500 duration-700"><Link href={`/products/${product?._id}`}>View Details</Link></button>
+                            <button className="lg:text-sm text-xl font-semibold hover:bg-[#fd3d57] hover:text-white border border-[#fd3d57] rounded-lg text-[#fd3d57] py-1 lg:px-2 md:px-1 px-0.5 transition-all ease-in-out delay-500 duration-700"><Link href={`/products/${product?._id}`}>View Details</Link></button>
                             <button onClick={() => dispatch(addCart(product))} disabled={isInCart} className={`border-2 rounded-full text-[#fd3d57] lg:py-1 md:py-1 py-0.5 lg:px-1 md:px-1 px-0.5 transition-all ease-in-out duration-700 ${isInCart ? "bg-gray-300 text-black border-black":"hover:bg-[#fd3d57] hover:text-white border-[#fd3d57]"}`}><IoMdAddCircle /></button>
                           </div>
                         </div>
